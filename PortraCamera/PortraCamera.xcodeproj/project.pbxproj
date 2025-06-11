@@ -7,13 +7,42 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4B70A4912DF69A2A001F5AFD /* PortraCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortraCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B70A4912DF69A2A001F5AFD /* PortraCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PortraCamera.app; path = "/Users/piyush/Documents/Comp Sci/Xcode/kodak-portra-film-camera/PortraCamera/build/Debug-iphoneos/PortraCamera.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4BBD6BA12DF9311900B44A97 /* Exceptions for "PortraCamera" folder in "PortraCamera" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Utils/MetadataWriter.swift,
+			);
+			target = 4B70A4902DF69A2A001F5AFD /* PortraCamera */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		4BBD6BA22DF9311900B44A97 /* Exceptions for "PortraCamera" folder in "Copy Bundle Resources" phase from "PortraCamera" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 4B70A48F2DF69A2A001F5AFD /* Resources */;
+			membershipExceptions = (
+				Utils/MetadataWriter.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4B70A4932DF69A2A001F5AFD /* PortraCamera */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4BBD6BA12DF9311900B44A97 /* Exceptions for "PortraCamera" folder in "PortraCamera" target */,
+				4BBD6BA22DF9311900B44A97 /* Exceptions for "PortraCamera" folder in "Copy Bundle Resources" phase from "PortraCamera" target */,
+			);
 			path = PortraCamera;
+			sourceTree = "<group>";
+		};
+		4BBD6BA52DF9312E00B44A97 /* PortaCameraTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PortaCameraTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				4B70A4932DF69A2A001F5AFD /* PortraCamera */,
-				4B70A4922DF69A2A001F5AFD /* Products */,
+				4BBD6BA52DF9312E00B44A97 /* PortaCameraTests */,
 			);
-			sourceTree = "<group>";
-		};
-		4B70A4922DF69A2A001F5AFD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B70A4912DF69A2A001F5AFD /* PortraCamera.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,6 +83,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				4B70A4932DF69A2A001F5AFD /* PortraCamera */,
+				4BBD6BA52DF9312E00B44A97 /* PortaCameraTests */,
 			);
 			name = PortraCamera;
 			packageProductDependencies = (
@@ -82,6 +104,7 @@
 				TargetAttributes = {
 					4B70A4902DF69A2A001F5AFD = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 				};
 			};
@@ -95,7 +118,7 @@
 			mainGroup = 4B70A4882DF69A2A001F5AFD;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4B70A4922DF69A2A001F5AFD /* Products */;
+			productRefGroup = 4B70A4882DF69A2A001F5AFD;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -251,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NMK2R6NGR3;
@@ -269,6 +293,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.piyush.PortraCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PortraCamera/Camera/PortraCamera-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -279,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NMK2R6NGR3;
@@ -297,6 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.piyush.PortraCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PortraCamera/Camera/PortraCamera-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
